@@ -10,7 +10,7 @@ function App() {
       <Router>
         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex">
           <Sidebar />
-          <main className="flex-1 ml-64 p-8">
+          <main className="flex-1 md:ml-64 p-8">
             <Routes>
               <Route path="/" element={<Navigate to="/view-items" replace />} />
               <Route path="/view-items" element={<ViewItems />} />
