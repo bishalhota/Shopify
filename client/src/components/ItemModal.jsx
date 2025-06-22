@@ -30,6 +30,10 @@ function ItemModal({ item, onClose }) {
     }
   }
 
+  const handleHamberger =() =>{
+    setIsHambergerClicked(!isHambergerClicked)
+  }
+
   // Close mobile menu on outside click
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -95,7 +99,7 @@ function ItemModal({ item, onClose }) {
 
       {/* Main Modal */}
       <div
-        className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-40 backdrop-blur-sm"
+        className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-[999] backdrop-blur-sm"
         onClick={handleBackdropClick}
       >
         <div className="bg-white rounded-2xl max-w-5xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
