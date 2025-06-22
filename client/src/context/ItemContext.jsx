@@ -11,6 +11,7 @@ export function useItems() {
   return context
 }
 
+//backend api 
 const API_BASE_URL = "https://shopify-b5se.onrender.com/api" ;
 
 
